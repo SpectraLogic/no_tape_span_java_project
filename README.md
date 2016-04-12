@@ -27,6 +27,6 @@ Or on windows:
 
 ```
 
-The application will create a data policy called, `no_tape_span`, and will assign it as the default data policy for the user passed in. The `user_id` can either be the ID or the name of the user.
+The application will create a data policy named, `no_tape_span`, and will assign it as the default data policy for the user passed in. The `user_id` can either be the ID or the name of the user.
 
-You can optionally specify the storage domain to use.  If there is more than one storage domain, then the application will print a list of all the available storage domains that a user can choose from, then they must re-run the application specifying which storage domain to use.  If there is only one storage domain, it will be used.
+You can optionally specify the ID of the storage domain to use.  If there is more than one storage domain, then the application will print a list of all the available storage domains that a user can choose from, they then must re-run the application specifying which storage domain to use.  If there is only one storage domain, it will be used
