@@ -7,7 +7,7 @@ put onto a single tape, rather than spanning across several.
 
 ## Usage
 
-Extract the application from the pre-build tar or zip file located in
+Make sure you have [Java 8](https://java.com/en/download/) installed. Then extract the application from the pre-build tar or zip file located in
 the
 [releases](https://github.com/SpectraLogic/no_tape_span_java_project/releases).
 
