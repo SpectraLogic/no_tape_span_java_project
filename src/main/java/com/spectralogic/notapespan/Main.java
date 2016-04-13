@@ -76,7 +76,7 @@ public class Main {
             }
 
             final PutDataPolicySpectraS3Response noTapeSpan = client.putDataPolicySpectraS3(new PutDataPolicySpectraS3Request("no_tape_span").withBlobbingEnabled(false).withVersioning(VersioningLevel.NONE));
-            client.putDataPersistenceRuleSpectraS3(new PutDataPersistenceRuleSpectraS3Request(noTapeSpan.getDataPolicyResult().getId(), DataIsolationLevel.STANDARD, storageDomainId, DataPersistenceRuleType.PERMANENT));
+            client.putDataPersistenceRuleSpectraS3(new PutDataPersistenceRuleSpectraS3Request(noTapeSpan.getDataPolicyResult().getId(), DataIsolationLevel.BUCKET_ISOLATED, storageDomainId, DataPersistenceRuleType.PERMANENT));
             client.modifyUserSpectraS3(new ModifyUserSpectraS3Request(args[3]).withDefaultDataPolicyId(noTapeSpan.getDataPolicyResult().getId()));
 
             System.out.println("Successfully created the data policy and assigned it as the default data policy for user: " + args[3]);
