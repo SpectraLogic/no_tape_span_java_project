@@ -33,7 +33,7 @@ dependencies {
   compile 'ch.qos.logback:logback-core:1.1.6'
   compile 'ch.qos.logback:logback-classic:1.1.6'
   compile 'org.slf4j:slf4j-api:1.7.20'
-  compile 'com.spectralogic.ds3:ds3-sdk:3.0.0-RC7'
+  compile 'com.spectralogic.ds3:ds3-sdk:3.0.1'
   compile fileTree(dir: 'lib', include: '*.jar')
 }
 
